@@ -80,7 +80,10 @@ def create_people(folder_name, skills_list_runes):
 		file_name = file_name.format(number = str(number))
 		file_operations.render_template("charsheet.svg", file_name, context)
 
+def main():
+	folder = create_empty_folder()
+	runes = create_skills()
+	create_people(folder, runes)
+
 if __name__ == '__main__':
-    folder = create_empty_folder()
-    runes = create_skills()
-    create_people(folder, runes)
+	main()
