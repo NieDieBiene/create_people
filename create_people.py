@@ -1,7 +1,6 @@
 import file_operations
 import random
 import os
-import shutil
 from faker import Faker
 
 
